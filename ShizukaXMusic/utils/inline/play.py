@@ -109,7 +109,7 @@ def stream_markup(_, videoid, chat_id):
                 text=_["PL_B_2"],
                 callback_data=f"add_playlist {videoid}",
             ),
-            InlineKeyboardButton(text="🌹 Join Channel 🌹", url=f"{SUPPORT_CHANNEL}""),
+            InlineKeyboardButton(text="🌹 Join Channel 🌹", url=f"{SUPPORT_CHANNEL}"),
         ],
         [
             InlineKeyboardButton(
