@@ -8,7 +8,7 @@ from ShizukaXMusic import app
 from ShizukaXMusic.core.call import Shizuka
 from ShizukaXMusic.utils.database import set_loop
 from ShizukaXMusic.utils.decorators import AdminRightsCheck
-
+from ShizukaXMusic.utils.inline.play import close_keyboard
 # Commands
 STOP_COMMAND = get_command("STOP_COMMAND")
 
@@ -23,5 +23,8 @@ async def stop_music(cli, message: Message, _, chat_id):
     await Shizuka.stop_stream(chat_id)
     await set_loop(chat_id, 0)
     await message.reply_text(
-        _["admin_9"].format(message.from_user.mention), disable_web_page_preview=True
+        _["admin_9"].format(message.from_user.mention), 
+        reply_markup=close_keyboard,
+
     )
+    
