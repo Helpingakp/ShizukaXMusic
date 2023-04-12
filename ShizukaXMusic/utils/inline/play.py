@@ -61,8 +61,11 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
             ),
         ],
         [
-            InlineKeyboardButton(text="🔥Owner🔥", url=f"{OWNER_ID}"),
-            
+            InlineKeyboardButton(
+
+                text="🔥 Owner 🔥", url=f"https://t.me/Helpingakp"
+
+            ),
             InlineKeyboardButton(
                 text="💥 Jøɩɳ Ɦɘɤɘ & Sʋƥƥøɤʈ 💞", url=f"https://t.me/Deep_shayari"
             )
@@ -129,7 +132,11 @@ def telegram_markup_timer(_, chat_id, played, dur):
             ),
         ],
         [
-            InlineKeyboardButton(text="🔥Owner🔥", url=f"{OWNER_ID}"),
+            InlineKeyboardButton(
+
+                text="🔥 Owner 🔥", url=f"https://t.me/Helpingakp"
+
+            ),
             
             InlineKeyboardButton(
                 text="💥 Jøɩɳ Ɦɘɤɘ & Sʋƥƥøɤʈ 💞", url=f"https://t.me/Deep_shayari"
